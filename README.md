@@ -16,7 +16,7 @@ Compilation
 ===========
 
 ````
-$ git clone https://github.com/ian57/Raspicade-Retrogame-2Player-Pi2.git
+$ git clone https://github.com/ian57/Recalbox-Retrogame-2Players-Pi2
 $ cd Raspicade-Retrogame-2Player-Pi2
 $ make
 ````
