@@ -118,6 +118,7 @@ struct {
 	{  19,     KEY_2  },   // Button Start P2
 	{  26,     KEY_6  },   // Button Coins/Credits P2
 	// Button to halt system on pin 15 -> sudo halt
+	{  14, 	   KEY_0 },    // Button to exit emulators and programs
 	{  15, 	   KEY_ESC },    // Button to exit emulators and programs
 	// For credit/start/etc., use USB keyboard or add more buttons.
 	{  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
