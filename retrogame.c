@@ -490,8 +490,18 @@ int main(int argc, char *argv[]) {
 						extstate[j] = intstate[j];
 						keyEv.code  = io[i].key;
 						keyEv.value = intstate[j];
-						write(fd, &keyEv,
-						sizeof(keyEv));
+						if ((keyEv.code==KEY_0)&&(keyEv.value==1))
+						{
+							system("sudo halt");
+							//system("echo \"that works\"");
+						}
+						else
+						{
+							write(fd, &keyEv,
+							sizeof(keyEv));
+						}
+						//write(fd, &keyEv,
+						//sizeof(keyEv));
 						c = 1; // Follow w/SYN event
 						if(intstate[j]) { // Press?
 							// Note pressed key
